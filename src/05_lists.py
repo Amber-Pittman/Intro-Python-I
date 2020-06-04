@@ -23,7 +23,7 @@ print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-x.insert(5,99) # Inserting 99 after the 4th index
+x.insert(5, 99) # Inserting 99 after the 4th index
 print(x)
 
 # Print the length of list x
