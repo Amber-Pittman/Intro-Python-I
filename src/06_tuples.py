@@ -35,10 +35,22 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # Write a function `print_tuple` that prints all the values in a tuple
 
 # YOUR CODE HERE
+def print_tuple(tup):
+    if type(tup) == int:
+        print(tup)
+    else: 
+        for i in range(len(tup)):
+            print(tup[i])
 
 t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
 print_tuple(u)
+#print(type(u))
+""" 
+Amber's Note: When generating a one-element tuple, if you write only one object 
+in parentheses (), the parentheses () are ignored and not considered a 
+tuple. To generate a one-element tuple, a comma , is required at the end.
+"""
