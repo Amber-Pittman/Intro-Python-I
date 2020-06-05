@@ -1,6 +1,6 @@
 """
 Dictionaries are Python's implementation of associative arrays.
-There's not much different with Python's version compared to what
+There's not much difference with Python's version compared to what
 you'll find in other languages (though you can also initialize and
 populate dictionaries using comprehensions just like you can with
 lists!).
@@ -35,13 +35,28 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
+waypoints.append({
+        "lat": 33,
+        "lon": 15,
+        "name": "new waypoint"
+})
+print("\n", waypoints, "\n")
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # Note: It's okay to access the dictionary using bracket notation on the
 # waypoints list.
-
 # YOUR CODE HERE
+waypoints[0].update(
+{
+    "lat": 43,
+    "lon": -130,
+    "name": "not a real place"
+})
+#print("\n", waypoints, "n")
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for waypoints_value in waypoints:
+    for value in waypoints_value:
+        print("\n", waypoints_value[value], "\n")
