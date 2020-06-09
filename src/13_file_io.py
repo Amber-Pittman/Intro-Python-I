@@ -7,9 +7,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # Open up the "foo.txt" file (which already exists) for reading
 # Print all the contents of the file, then close the file
-# Note: pay close attention to your current directory when trying to open "foo.txt"
+# Note: pay close attention to your current directory when 
+  # trying to open "foo.txt"
 
 # YOUR CODE HERE
+
+foo = open("foo.txt", "r") # r for read only
+print(foo.read())
+foo.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +22,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+bar = open("bar.txt", "w") # w for only writing
+bar.write("Let's go \n")
+bar.write("learn some \n")
+bar.write("Python!")
+bar.close()
