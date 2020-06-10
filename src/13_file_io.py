@@ -11,10 +11,11 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
   # trying to open "foo.txt"
 
 # YOUR CODE HERE
-
-foo = open("foo.txt", "r") # r for read only
-print(foo.read())
-foo.close()
+# open returns a file object, with 2 arguments: filename and mode
+# r for read only
+with open("foo.txt", "r") as foo:
+  for line in foo:
+    print(line)
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
