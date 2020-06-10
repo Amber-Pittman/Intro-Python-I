@@ -31,13 +31,13 @@ class Geocache(Waypoint):
     self.size = size
 
   def __str__(self):
-    return f"\n Geocache: {self.name}is located at {self.lat} latitude and {self.lon} longitude. \n It's size is {self.size}. \n It has a difficulty rating of {self.difficulty}. \n"
+    return f"\n Geocache: {self.name} is located at {self.lat} latitude and {self.lon} longitude. \n It's size is {self.size}. \n It has a difficulty rating of {self.difficulty}. \n"
 
 # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
 # YOUR CODE HERE
 waypoint = Waypoint(41.70505, -121.51521, "Catacombs")
-print("\n", waypoint.name, "\n", waypoint.lat, "\n", waypoint.lon)
+print("waypoint =\n", waypoint.name, "\n", waypoint.lat, "\n", waypoint.lon, "\n")
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
 print(waypoint)
@@ -46,7 +46,7 @@ print(waypoint)
 
 # YOUR CODE HERE
 geocache = Geocache("Newberry Views", 1.5, 2, 44.052137, -121.41556)
-print("\n", geocache.name, "\n", geocache.difficulty, "\n", geocache.size, "\n",geocache.lat, "\n", geocache.lon, "\n",)
+print("\n geocache =\n", geocache.name, "\n", geocache.difficulty, "\n", geocache.size, "\n",geocache.lat, "\n", geocache.lon, "\n",)
 
 # Print it--also make this print more nicely
 print(geocache)
