@@ -16,7 +16,7 @@ for x in sys.argv:
   print("Argument: ", x, "\n")
 # Print out the OS platform you're using:
 # YOUR CODE HERE
-print("Get OS platform you're using: ", sys.getwindowsversion().platform, "platform: ", sys.platform, "\n")
+print("Get OS platform you're using: ", sys.platform, "platform: ", sys.platform, "\n")
 # Print out the version of Python you're using:
 # YOUR CODE HERE
 print("python version: ", sys.version, "\n")
@@ -28,14 +28,13 @@ import os
 # Print the current process ID
 # YOUR CODE HERE
 pid = os.getpid()
-print(pid, "\n")
+print("Current Process ID: ", pid, "\n")
 
 # Print the current working directory (cwd):
 # YOUR CODE HERE
 cwd = os.getcwd()
-print(cwd, "\n")
+print("This is the current working directory: ", cwd, "\n")
 
 # Print out your machine's login name
 # YOUR CODE HERE
-import getpass
-print(getpass.getuser(), "\n")
+print("Here's the machine login name: ", os.getlogin(), "\n")
