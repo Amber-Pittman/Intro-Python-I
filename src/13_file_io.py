@@ -14,19 +14,7 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # open returns a file object, with 2 arguments: filename and mode
 # r for read only
 
-with open("src/foo.txt", "r") as foo:
-  for line in foo:
-    print(line)
-foo.close()
 
-# foo = open("src/foo.txt", "r")
-# print(foo.read())
-# foo.close()
-
-# foo = open("src/foo.txt", "r")
-# if foo.mode == "r":
-#   contents = foo.read()
-#   print(contents)
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
