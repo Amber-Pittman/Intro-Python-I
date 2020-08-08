@@ -61,8 +61,7 @@ best for learning new languages.
 
 ## Summary
 
-* Implement a number of tiny Python programs that demonstrate Python syntax and
-  language concepts.
+* Implement a number of tiny Python programs that demonstrate Python syntax and language concepts.
 
 ## Instructions
 
@@ -101,9 +100,7 @@ The suggested order for going through each of the directories is:
    [here](https://code.visualstudio.com/docs/python/linting)). Try installing
    one for your editor!
 
-2. Rewrite code challenges you've solved before or projects you've implemented
-   before in a different language in Python. Start getting in as much practice
-   with the language as possible!
+2. Rewrite code challenges you've solved before or projects you've implemented before in a different language in Python. Start getting in as much practice with the language as possible!
 
 3. Write a program to determine if a number, given on the command line, is prime.
 
