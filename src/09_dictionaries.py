@@ -59,4 +59,4 @@ waypoints[0].update(
 # YOUR CODE HERE
 for waypoints_value in waypoints:
     for value in waypoints_value:
-        print("\n", waypoints_value[value], "\n")
+        print("\n", waypoints_value[value])

@@ -26,8 +26,7 @@ def outer():
 
     inner()
 
-    # This prints 120. What do we have to change in inner() to get it to print
-    # 999?
+    # This prints 120. What do we have to change in inner() to get it to print 999?
     # Note: Google "python nested function scope".
     print(y)
 

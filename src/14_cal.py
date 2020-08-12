@@ -53,7 +53,6 @@ elif (len(user_list_input)) == 2:
   year = int(user_list_input[1])
   month = int(user_list_input[0])
   print(calendar.month(year, month))
-#Otherwise, print a usage statement to the terminal indicating the format that your 
-  # program expects arguments to be given. Then exit the program.
+#Otherwise, print a usage statement to the terminal indicating the format that your program expects arguments to be given. Then exit the program.
 else:
   print("Use MM YYYY numerical format, with space between month and year.")
