@@ -14,10 +14,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # open returns a file object, with 2 arguments: filename and mode
 # r for read only
 
-with open("src/foo.txt", "r") as foo:
-  for line in foo:
-    print(line)
-foo.close()
+# with open("src/foo.txt", "r") as foo:
+#   for line in foo:
+#     print(line)
+# foo.close()
+
+with open('src/foo.txt') as foo:
+    read_data = foo.read()
+    print(read_data)
 
 # foo = open("src/foo.txt", "r")
 # print(foo.read())
